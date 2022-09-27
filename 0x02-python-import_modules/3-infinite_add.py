@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-import string
-print(string.ascii_uppercase)
+import sys
+
+if __name__ == '__main__':
+    args = sys.argv
+    args.pop(0)
+    print(sum(map(int, args)))
