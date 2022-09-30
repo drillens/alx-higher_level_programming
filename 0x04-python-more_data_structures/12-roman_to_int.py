@@ -19,4 +19,4 @@ def roman_to_int(roman_string):
 
         prev = values[i]
 
-    return 
+    return t_sum 
