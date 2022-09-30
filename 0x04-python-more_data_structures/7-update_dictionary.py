@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-def update_dictionary(a_dictionary, key, value):
-    if key not in a_dictionary:
-        a_dictionary[key] = value
-    else:
-        for i in a_dictionary:
-            if i == key:
-                a_dictionary[i] = value
-    return a_dictionary
+
+def update_dictionary(a_dict, key, value):
+    """
+    add or replace a new key value in dict
+    """
+    if a_dict is None:
+        return None
+    a_dict[key] = value
+    return 
