@@ -1,10 +1,7 @@
 #!/usr/bin/python3
+def update_dictionary(a_dictionary, key, value):
+    if a_dictionary.get(key):
+        a_dictionary.pop(key)
+    a_dictionary.update({key: value})
 
-def update_dictionary(a_dict, key, value):
-    """
-    add or replace a new key value in dict
-    """
-    if a_dict is None:
-        return None
-    a_dict[key] = value
-    return 
+    return a_dictionary
